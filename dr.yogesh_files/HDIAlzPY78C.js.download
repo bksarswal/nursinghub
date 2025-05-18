@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("EBGraphQLTypeUtils",["err"],(function(a,b,c,d,e,f,g){"use strict";function a(a){if(/^\d+$/.test(a)===!1)throw c("err")("threadId is not a number");return Number(a)}function b(a){return a.toString()}g.threadIdToThreadIdInt=a;g.timestampMsToTimestampMsString=b}),98);
+__d("getRequestConstUri",["ConstUriUtils","unrecoverableViolation"],(function(a,b,c,d,e,f,g){"use strict";function a(){var a=d("ConstUriUtils").getUri(window.location.href);if(a==null)throw c("unrecoverableViolation")("Cannot create ConstUriImpl of current request","comet_infra");return a}g["default"]=a}),98);
